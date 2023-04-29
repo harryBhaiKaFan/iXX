@@ -1,0 +1,97 @@
+*{
+	margin:0;
+	padding:0;
+	box-sizing:border-box;
+	transition:0.5s all;
+}
+
+html,body
+{
+	position: relative;
+	width:100vw;
+	height:100vh;
+}
+
+.loader
+{
+	width:100%;
+	height:100%;
+}
+
+.load-img
+{
+	display:block;
+	aspect-ratio:16/9;
+	width:100%;
+	height:70%;
+}
+
+.load-text
+{
+	position:relative;
+	z-index:111;
+	background:#ffaf00;
+	color:#58430f;
+	font-weight:1000;
+	display:flex;
+	justify-content:center;
+	align-items:flex-start;
+	height:30%;
+	font-size:1.5rem;
+	font-family:serif;
+	padding-top:0;
+	animation:ldTXT 1.5s infinite alternate ease-in-out;
+}
+
+@keyframes ldTXT
+{
+	100%{
+		padding-top:15vh;
+	}
+}
+
+.hidden
+{
+	display:none;
+}
+
+.active-btn
+{
+	background: rgba(230,250,150,0.7);
+}
+
+.game-screen
+{
+	width:100%;
+	height:100%;
+	background:#0097b7;
+	touch-action: none;
+}
+
+.toggle-fullscreen-btn
+{
+	position: absolute;
+	z-index: 999;
+	top:2vh;
+	left:calc(98vw - 5vw);
+	width:5vw;
+	height:5vh;
+	border:2px solid rgba(130,100,50,0.8);
+}
+
+.toggle-sound-btn
+{
+	position: absolute;
+	z-index: 999;
+	top:2vh;
+	left:2vw;
+	width:8vmin;
+	height:8vmin;
+	border:none;
+	border-right:2px solid rgba(130,100,50,0.7);
+	border-radius:50%;
+	color:rgba(130,100,50,0.7);
+	display: grid;
+	place-items: center;
+	background-repeat: repeat-x;
+}

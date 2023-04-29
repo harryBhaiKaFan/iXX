@@ -1,0 +1,118 @@
+*{
+	margin:0;
+	padding:0;
+	box-sizing:border-box;
+	transition:0.5s all;
+}
+:root
+{
+	width:100%;
+	height:100%;
+}
+
+body
+{
+	--bg:#091921;
+	--sh1:#102025;
+	--sh2:#001121;
+	--hrBg:#fff;
+	background:var(--bg);
+	width:100%;
+	height:100%;
+	display:flex;
+	align-items:center;
+	justify-content:center;
+}
+
+.light
+{
+	--bg:#d1dae3;
+	--sh1:#e0ebe5;
+	--sh2:#d0d5df;
+	--hrBg:#000;
+}
+
+/***Clock goes here***/
+.clock
+{
+	background:url('clock.png');
+	border-radius:50%;
+	background-size:100% 100%;
+	width:80vmin;
+	height:80vmin;
+	box-shadow:-9px -9px 20px var(--sh1),
+	9px 9px 20px var(--sh2),
+	inset 5px 5px 20px  var(--sh2),
+	inset -5px -5px 20px var(--sh1);
+	display:flex;
+	align-items:center;
+	justify-content:center;
+	position:relative;
+}
+
+#cenPnt
+{
+	width:5%;
+	height:5%;
+	background:#48d;
+	border-radius:50%;
+	position:relative;
+	z-index:99;
+}
+
+.hnd
+{
+	transform-origin:bottom;
+	transition:none;
+}
+
+#sec
+{
+	width:0.6%;
+	height:35%;
+	background:#48d;
+	position:absolute;
+	top:15%;
+	z-index:98;
+	display:flex;
+	flex-direction:column;
+	align-items:center;
+	justify-content:space-between;
+}
+
+#secHead
+{
+	background:#48d;
+	width:300%;
+	height:20%;
+	border-radius:100% 100% 0% 0%;
+}
+
+#secTail
+{
+	width:250%;
+	height:20%;
+	background:#48d;
+	position:relative;
+	top:20%;
+}
+
+#min
+{
+	width:1%;
+	height:30%;
+	background:#f05050;
+	position:absolute;
+	top:20%;
+	z-index:97;
+}
+
+#hr
+{
+	width:1.2%;
+	height:25%;
+	background:var(--hrBg);
+	position:absolute;
+	top:25%;
+	z-index:96;
+}

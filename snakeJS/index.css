@@ -1,0 +1,87 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    transition:0.5s all;
+}
+
+body
+{
+    background: rgb(65,65,65);
+    user-select:none;
+}
+
+.scoreElem
+{
+    color:#7f7f7f;
+    position:absolute;
+    top:0;
+    right:0;
+    padding:3px 4px;
+    border:2px solid #008f8f;
+}
+/**Game screen here**/
+#gameScreen
+{
+    width:100vmin;
+    height:100vmin;
+    background:#000;
+}
+
+
+/**Game ctrlr here**/
+.up
+{
+    grid-area:up;
+}
+
+.left
+{
+    grid-area:left;
+}
+
+.right
+{
+    grid-area:right;
+}
+
+.down
+{
+    grid-area:down;
+}
+
+#gameCtrls
+{
+    width:100vw;
+    height:calc(100vh - 100vmin);
+    background:#f00;
+    display:grid;
+    grid-template-areas:'up up' 'left right' 'down down';
+}
+
+
+.ctrl{
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    padding:10px 5px;
+    background: #fff;
+}
+
+.ctrl:active
+{
+    color:#fff;
+    background-color:#002f00;
+}
+
+
+/** @responsive*****/
+@media only screen and (max-height:300px)
+{
+    #gameCtrls
+    {
+        width:calc(100vw - 100vmin);
+        height:100vh;
+        float:right;
+    }
+}

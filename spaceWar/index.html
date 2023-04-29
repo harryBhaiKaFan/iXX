@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>spaceWar</title>
+	<meta name="viewport" content="initial-scale=1,width=device-width" />
+	<!---Scripts and style-->
+	<link href="./index.css" rel="stylesheet" />
+
+	<script defer src="./index.js"></script>
+	<!---->
+</head>
+<body>
+
+	<!--game screen here-->
+
+	<section id="gameScreen">
+		<!--Score board-->
+		<div id="scrBrd">
+			Score:
+			<span id="scr">0</span>
+		</div>
+
+		<progress id="lives" min="0" max="75">
+		</progress>
+		<!--Obstacles here-->
+		<!--MyBox here-->
+		<div id="myBox">
+		</div>
+	</section>
+
+
+	<!-- game ctrlr here -->
+	<section id="gameController">
+		<div class="ctrlBtn Up">
+			Up
+		</div>
+		<div class="ctrlBtn Left">
+			Left
+		</div>
+		<div class="shoot" id="shootBtn"></div>
+		<div class="ctrlBtn Right">
+			Right
+		</div>
+		<div class="ctrlBtn Down">
+			Down
+		</div>
+	</section>
+	<!--End of gamectrl-->
+
+</body>
+</html>
