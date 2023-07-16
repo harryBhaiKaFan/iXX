@@ -8,12 +8,10 @@ const togSoundBtn=document.querySelector("[data-toggle-sound]");
 
 
 /*
-  ####   BUGS  or  INCOMPLETES   ####
+	## Unmaintained code ##
 
-  --> Bow is incomplete
-  --> No GRAVITY for arrow
-  --> BEST WORKED ON MOBILE PHONES ONLY
-  
+  		--> Bow is incomplete
+		--> BowMan is not that good looking...
 */
 const App={
 	init:function(){
@@ -37,8 +35,6 @@ const App={
 			loader.classList.toggle("hidden");
 			gameScreen.classList.toggle("hidden");
 			Game.init(gameScreen);
-			togSoundBtn.click();
-			togScreenBtn.click();
 		});
 	},
 	toggleFullscreen:function(){

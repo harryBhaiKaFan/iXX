@@ -8,16 +8,16 @@ const PATH = {
 
 const DMSNS_CNST = {
 	Grass_Width: function(vw){
-		return(Math.ceil(vw/8));
+		return(Math.ceil(720/16));
 	},
 	Grass_Height: function(vh){
-		return(Math.ceil(vh/8));
+		return(Math.ceil(720/16));
 	},
 	Cloud_Width: function(vw){
-		return(Math.ceil(vw/5));
+		return(Math.ceil(720/5));
 	},
 	Cloud_Height: function(vh){
-		return(Math.ceil(vh/3));
+		return(Math.ceil(1280/15));
 	}
 }
 

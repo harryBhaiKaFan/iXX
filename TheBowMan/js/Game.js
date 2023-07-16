@@ -76,7 +76,6 @@ export const Game = {
 
 		requestAnimationFrame(GAME_STATE);
 		if(this.lstDrawMs != null && ms - this.lstDrawMs < REN_DELAY) return;
-		let delta = ms - this.lstDrawMs;
 		this.ctx.clearRect(0,0,this.cnvs.width,this.cnvs.height);
 
 		OverScreen.render();
