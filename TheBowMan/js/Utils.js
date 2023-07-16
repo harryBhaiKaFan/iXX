@@ -1,8 +1,8 @@
 export const Sound = {
-	DAMAGE_SOUND: "../sound/damage.mp3",
-	DEAD_SOUND: "../sound/dead.mp3",
-	LAUNCH_SOUND: "../sound/launch.mp3",
-	SHOT_SOUND: "../sound/shot_blast.mp3",
+	DAMAGE_SOUND: location.href+"/sound/damage.mp3",
+	DEAD_SOUND: location.href+"/sound/dead.mp3",
+	LAUNCH_SOUND: location.href+"/sound/launch.mp3",
+	SHOT_SOUND: location.href+"/sound/shot_blast.mp3",
 	audio: null,
 	get SOUND(){
 		return !this.audio.muted;

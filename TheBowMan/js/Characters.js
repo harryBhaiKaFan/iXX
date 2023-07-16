@@ -3,10 +3,10 @@ import { randInt, Sound } from './Utils.js';
 
 
 const PATH = {
-	BIRD_SYM_IMG: "../img/Bird/Bird_3.png",
-	LIFE_IMG: "../img/Life.png",
-	BIRD_ANIM_FLDR: "../img/Bird",
-	POOP_IMG: "../img/Poop.png"
+	BIRD_SYM_IMG: location.href+"/img/Bird/Bird_3.png",
+	LIFE_IMG: location.href+"/img/Life.png",
+	BIRD_ANIM_FLDR: location.href+"/img/Bird",
+	POOP_IMG: location.href+"/img/Poop.png"
 }
 
 

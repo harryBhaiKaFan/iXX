@@ -18,8 +18,8 @@ body
 
 #gameScreen
 {
-  height:100vmin;
-  width:100vmin;
+  height:60vh;
+  width:100vw;
   position:relative;
   background:#000;
   display:inline-block;
@@ -149,7 +149,7 @@ body
 	"left shoot right"
 	"down down down";
   width:100%;
-  height:calc(100vh - 100vmin);
+  height:40vh;
   position: relative;
 }
 

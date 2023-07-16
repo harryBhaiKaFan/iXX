@@ -2,8 +2,8 @@ import { Dmsns, Draw, Color } from './Draw.js';
 import { randInt } from './Utils.js';
 
 const PATH = {
-	CLOUD_IMG: "../img/Cloud.png",
-	GRASS_IMG: "../img/Grass.png",
+	CLOUD_IMG: location.href+"/img/Cloud.png",
+	GRASS_IMG: location.href+"/img/Grass.png",
 };
 
 const DMSNS_CNST = {

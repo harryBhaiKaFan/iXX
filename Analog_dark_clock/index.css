@@ -35,7 +35,7 @@ body
 /***Clock goes here***/
 .clock
 {
-	background:url('clock.png');
+	background:url('./clock.png');
 	border-radius:50%;
 	background-size:100% 100%;
 	width:80vmin;

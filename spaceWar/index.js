@@ -1,3 +1,8 @@
+/**
+ * !!! Only supports mobile devices...
+ */
+
+
 let screenElem = null;
 let myBoxElem = null;
 let scrElem = null; //score Elem

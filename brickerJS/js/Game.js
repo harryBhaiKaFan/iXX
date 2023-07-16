@@ -4,7 +4,7 @@ import {randNum} from "./Utils.js";
 
 /***
  * 
- * BUGS 🐞 (known)
+ * BUGS 🐞 (known) (NEVER FIXED)
  * 
  * 1. PLATFORM NOT WORKING WHEN BALL IS TOO FAST.
  * 2. When Ball launch angle == π/2, the ball falls in a loop of going up and down.
@@ -39,7 +39,7 @@ const LIFE_ELEM={
 	},
 	init: function (cnv){
 		this.LIFE_IMG=new Image();
-		this.LIFE_IMG.src="/img/life.png";
+		this.LIFE_IMG.src=location.href+"/img/life.png";
 	},
 	render: function (ctx,change){
 		let curr_lives=this.LIVES
