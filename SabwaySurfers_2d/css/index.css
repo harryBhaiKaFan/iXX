@@ -1,0 +1,203 @@
+*{
+	margin:0;
+	padding:0;
+	box-sizing:border-box;
+}
+
+body{
+	background: linear-gradient(#0f9,#aa0);
+	min-height:100vh;
+	min-width:100vw;
+	display:grid;
+	grid-template-columns:1fr;
+	grid-template-rows:1fr 10fr;
+}
+
+header
+{
+	display:flex;
+	align-items:center;
+	justify-content: space-around;
+	background:rgba(100,100,100,0.5);
+}
+
+.cntnr
+{
+	color:#fff;
+	font-size:1.2rem;
+	font-family:monospace;
+}
+
+#score
+{
+	display:inline-block;
+}
+/*** header ends ***/
+
+.gameScreen
+{
+	background:skyblue;
+	display: flex;
+	flex-direction: column;
+	align-items:center;
+	justify-content:flex-end;
+}
+/***basic screen ends***/
+
+/***Jack styling here ***/
+.mainCharacter
+{
+	background: transparent;
+	width:60px;
+	height:100px;
+	display:flex;
+	flex-direction:column;
+	align-items:center;
+	justify-content:space-between;
+	transition:all 0.36s ease-in-out;
+	left:-75%;
+	top:30%;
+	position:relative;
+	z-index:100;
+}
+
+.char_face
+{
+	height:30%;
+	width:60%;
+	background:rgba(230,100,100,1);
+	border-radius: 50%;
+	position:relative;
+}
+
+.char_body
+{
+	height:40%;
+	width:80%;
+	background:rgba(200,0,0,1);
+	border-radius:20%;
+	white-space:nowrap;
+	position: relative;
+}
+
+.char_legs
+{
+	height:30%;
+	width:100%;
+	display:flex;
+	align-items:center;
+	justify-content:space-evenly;
+}
+
+/**face styleing**/
+.hair
+{
+	background:#000;
+	width:100%;
+	height:30%;
+}
+
+.eye
+{
+	background:#000;
+	width:5px;
+	height:5px;
+	position: absolute;
+	right:0;
+	top:35%;
+}
+
+.smile
+{
+	background:#000;
+	width:50%;
+	height:5px;
+	position:absolute;
+	bottom:10%;
+	right:0;
+	border-bottom-right-radius: 80%;
+}
+
+/**body styling**/
+
+.hand
+{
+	background:rgba(230,100,100,1);
+	width:10%;
+	height:80%;
+	position: absolute;
+	top:10%;
+	left:15%;
+	transform-origin: top;
+	transition: 0.3s;
+	display:inline-block;
+}
+
+
+/**leg styling**/
+
+.leg
+{
+	background: transparent;
+	width:15%;
+	height:100%;
+	position:relative;
+	transition:all 0.5s;
+}
+
+.thigh
+{
+	height:40%;
+	background:#713;
+	position: relative;
+	transition:all 0.5s;
+}
+
+.foot
+{
+	height:60%;
+	background:#713;
+	position:relative;
+	transition:all 0.3s;
+}
+
+/***Train styling here ***/
+
+.train
+{
+	max-width:100vw;
+	min-height:130px;
+	white-space: nowrap;
+	position: relative;
+	overflow-x:hidden;
+	z-index:1;
+}
+
+.train-part
+{
+	height:130px;
+	width:100vw;
+	background:#713;
+	display:inline-flex;
+	align-items: flex-start;
+	justify-content:space-around;
+	position:relative;
+	left:0;
+	top:0;
+}
+
+.train-window
+{
+	background:skyblue;
+	margin-top:20px;
+	width:20%;
+	height:30%;
+}
+
+.train-obstacle
+{
+	width:20%;
+	height:18%;
+	background: skyblue;
+	position: absolute;
+}

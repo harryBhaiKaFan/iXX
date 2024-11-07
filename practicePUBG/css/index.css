@@ -1,0 +1,67 @@
+*{
+	margin:0;
+	padding:0;
+	box-sizing:border-box;
+}
+body
+{
+	background:#000;
+	min-width:100vw;
+	height:90vh;
+	overscroll-behavior-y:contain;
+}
+/***Basics done above***/
+
+header
+{
+	position: absolute;
+	top:0;
+	width:100vw;
+	overflow-x:scroll;
+	color:rgba(255,255,255,0.5);
+	z-index:999;
+	padding:1vh 0;
+	display:flex;
+	align-items:center;
+	justify-content:center;
+	background:transparent;
+	font-size:1.6rem;
+}
+
+.cntn
+{
+	max-width:50%;
+	font-size:1rem;
+	display:flex;
+	align-items:center;
+	justify-content:center;
+	font-family:monospace;
+	border-left:1px solid #fff;
+	padding-left:13px;
+}
+
+#kills{
+	font-family:impact;
+	font-weight:bold;
+	padding:1vh 1vw;
+}
+/*******header End up here*******/
+#screen /***Screeny stuff*****/
+{
+	width:100vw;
+	height:90vh;
+	position:relative;
+	z-index:111;
+	display:flex;
+	align-items:center;
+	justify-content:space-between;
+	overflow:hidden;
+}
+
+.bg
+{
+	position:absolute;
+	z-index:-1;
+	width:10%;
+	height:10%;
+}
